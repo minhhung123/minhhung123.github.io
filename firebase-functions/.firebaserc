@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "c4e-js-demo",
+    "staging": "dealhack-c0303"
+  }
+}

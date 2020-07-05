@@ -1,0 +1,16 @@
+.item-image{
+    max-width: 100%;
+    height: 203px;
+    width: fit-content;
+    flex-direction: row;
+    align-items: center;
+}
+
+.store-link2{
+    font-size: medium;
+}
+
+.item-size{
+    height: 100%;
+    
+}

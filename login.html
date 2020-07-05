@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DealHack</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700">
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+    
+ 
+
+    <div class = "limiter open">
+        <div class="container">
+            <div class="wrap">
+                <form class="login-form">
+                    <span class="login-form-title">
+                        Welcome to Dealhack
+                    </span>
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="text" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="password" name="password" placeholder="Password">
+                    </div>
+
+                    <div class="login-container-form-btn">
+                        <div class ="wrap-login-form-btn">
+                            <div class="login-form-bgbtn"></div>
+                            <button class="login-form-btn" type="submit">Login</button>
+                            <p class="error"></p>
+                            
+                        </div>
+                       
+                    </div>
+                    <div class="text-center p-t-115">
+						<span class="txt1">
+							Don’t have an account?
+						</span>
+
+						<a class="txt2 switch">
+							Sign Up
+						</a>
+					</div>
+                </form>
+            </div>
+        </div>
+
+        <div class="container active">
+
+            <div class="wrap">
+                <form class="sign-up-form">
+                    <span class="sign-up-form-title">
+                        Welcome to Dealhack
+                    </span>
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="text" name="email" placeholder="Email">
+                    </div>
+
+                    <div class="wrap-input validate-input">
+                        <input class="input" type="password" name="password" placeholder="Password">
+                    </div>
+
+                    <div class="sign-up-container-form-btn">
+                        <div class ="wrap-sign-up-form-btn">
+                            <div class="sign-up-form-bgbtn"></div>
+                            <button class="sign-up-form-btn" type="submit">Register</button>
+                            <p class="error"></p>
+                            
+                        </div>
+                       
+                    </div>
+                    <div class="text-center p-t-115">
+						<span class="txt1">
+							Already have an account?
+						</span>
+
+						<a class="txt2 switch">
+							Login
+						</a>
+					</div>
+                </form>
+            </div>
+        
+        </div>
+
+        
+
+
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-functions.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCsEmxdVdAEfvBdOshVfVbiuw698bmJRPM",
+        authDomain: "dealhack-c0303.firebaseapp.com",
+        databaseURL: "https://dealhack-c0303.firebaseio.com",
+        projectId: "dealhack-c0303",
+        storageBucket: "dealhack-c0303.appspot.com",
+        messagingSenderId: "655308914162",
+        appId: "1:655308914162:web:f9452eb44c07431b0d7f6b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="js/authen.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dealhack</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mukta:300,400,700"> 
+    <!-- <link rel="stylesheet" href="fonts/icomoon/style.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+
+
+    <link rel="stylesheet" href="css/aos.css"> -->
+
+    <link rel="stylesheet" href="firebase-functions/public/css/style.css">
+    
+
+
+</head>
+<body>
+    <!-- <div class = "size-wrap">
+        <header class="site-navbar" role="banner">
+            <div class="site-navbar-top">
+              <div class="container">
+                <div class="row align-items-center">
+      
+                  <div class="col-6 col-md-4 order-2 order-md-1 site-search-icon text-left">
+                    <form action="" class="site-block-top-search">
+                      <span class="icon icon-search2"></span>
+                      <input type="text" class="form-control border-0" placeholder="Search">
+                    </form>
+                  </div>
+      
+                  <div class="col-12 mb-3 mb-md-0 col-md-4 order-1 order-md-2 text-center">
+                    <div class="site-logo">
+                      <a href="index.html" class="js-logo-clone">DealHack</a>
+                    </div>
+                  </div>
+      
+                  <div class="col-6 col-md-4 order-3 order-md-3 text-right">
+                    <div class="site-top-icons">
+                      <ul>
+                        <li><a href="#"><span class="icon icon-person"></span></a></li>
+                        <li><a href="#"><span class="icon icon-heart-o"></span></a></li>
+                      
+                        <li class="d-inline-block d-md-none ml-md-0"><a href="#" class="site-menu-toggle js-menu-toggle"><span class="icon-menu"></span></a></li>
+                      </ul>
+                    </div> 
+                  </div>
+      
+                </div>
+              </div>
+            </div> 
+            <nav class="site-navigation text-right text-md-center" role="navigation">
+              <div class="container">
+                <ul class="site-menu js-clone-nav d-none d-md-block">
+                  <li class="active">
+                    <a href="index.html">Home</a>
+                    <!-- <ul class="dropdown">
+                      <li><a href="#">Menu One</a></li>
+                      <li><a href="#">Menu Two</a></li>
+                      <li><a href="#">Menu Three</a></li>
+                      <li class="has-children">
+                        <a href="#">Sub Menu</a>
+                        <ul class="dropdown">
+                          <li><a href="#">Menu One</a></li>
+                          <li><a href="#">Menu Two</a></li>
+                          <li><a href="#">Menu Three</a></li>
+                        </ul>
+                      </li>
+                    </ul> -->
+                  </li>
+                  <!-- <li>
+                    <a href="about.html">About</a> -->
+                    <!-- <ul class="dropdown">
+                      <li><a href="#">Menu One</a></li>
+                      <li><a href="#">Menu Two</a></li>
+                      <li><a href="#">Menu Three</a></li>
+                    </ul> -->
+                  <!-- </li>
+                  <li><a href="shop.html">Shop</a></li> -->
+<!--            
+                </ul>
+              </div>
+            </nav>
+          </header>
+
+    </div> -->
+
+
+
+    <div class="auth open">
+        <div class="modal">
+          <h2>Login</h2>
+          <form class="login">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button>Login</button>
+            <p class="error"></p>
+          </form>
+          <div>No account?<a class="switch">Register instead</a></div>
+        </div>
+  
+        <div class="modal">
+          <h2>Register</h2>
+          <form class="register">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button>Register</button>
+            <p class="error"></p>
+          </form>
+          <div>Got an account?<a class="switch">Login instead</a></div>
+        </div>
+      </div>
+
+       <!-- new request modal -->
+    <div class="new-request">
+        <div class="modal">
+          <h2>Request a Tutorial</h2>
+          <form>
+            <input type="text" name="request" placeholder="Request...">
+            <button>Submit Request</button>
+            <p class="error"></p>
+          </form>
+        </div>
+      </div>
+  
+  
+  
+      <header>
+        <nav>
+          <a class="add-request">add request</a>
+          <a class="sign-out">sign out</a>
+        </nav>
+      </header>
+  
+      <section class="content">
+        <h1>Tutorial Requests</h1>
+        <ul class="request-list"> 
+          <li>
+            <span class="text">Laravel 6 tutorial</span>
+            <div>
+              <span class="votes">125</span>
+              <i class="material-icons upvote">arrow_upward</i>
+            </div>
+          </li>
+        </ul>
+  
+       
+      </section>
+
+    
+
+
+
+
+
+
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.1/firebase-functions.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+    // Your web app's Firebase configuration
+    var firebaseConfig = {
+        apiKey: "AIzaSyCsEmxdVdAEfvBdOshVfVbiuw698bmJRPM",
+        authDomain: "dealhack-c0303.firebaseapp.com",
+        databaseURL: "https://dealhack-c0303.firebaseio.com",
+        projectId: "dealhack-c0303",
+        storageBucket: "dealhack-c0303.appspot.com",
+        messagingSenderId: "655308914162",
+        appId: "1:655308914162:web:f9452eb44c07431b0d7f6b"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="firebase-functions/public/js/app.js"></script>
+    <script src="firebase-functions/public/js/auth.js"></script>
+
+
+</body>
+</html>
